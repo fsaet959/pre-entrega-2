@@ -1,0 +1,221 @@
+/* estilos generales */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* tipografia */
+@font-face {
+    font-family: "new-spirit";
+    src: url('../fonts/fonnts.com-New-Spirit-.otf') format('opentype');
+}
+
+
+body{
+    font-family: "new-spirit", serif;
+    background-color: #65a5cd ;   /* mismo color en todas las paginas */
+    color: #111111;
+}
+
+/* header */
+header{
+    background-color: rgba(101, 165, 205, 0.35); /* celeste un poco mas claro */
+    backdrop-filter: blur(4px);  
+    padding: 1rem 2rem;
+    border-radius: 0 0 12px 12px 
+}
+/* Fondo  */
+.navbar {
+  background-color: rgba(101, 165, 205, 0.35);
+  backdrop-filter: blur(4px);
+  border-radius: 0 0 12px 12px;
+}
+
+
+.nav-link {
+  color: #2f5c4c !important;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  color: #e2b762 !important;
+}
+
+/* Icono hamburguesa */
+.navbar-toggler {
+  border-color: #2f5c4c;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(47,92,76,1)' stroke-width='3' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+    
+/* secciones gral*/
+
+section {
+    background-color: rgba(255, 255, 255, 0.35);
+    padding: 2rem;
+    border-radius: 12px;
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+
+/* hero */
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+.hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    color: #2f5c4c
+}
+.hero p {
+    margin-bottom:1.5rem;
+    color:#7f7e7e;
+}
+.diseño {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color:#2f5c4c;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 999px;
+      
+}
+.diseño:hover {
+    background-color:#e2b762;
+    color: #2f5c4c; 
+    transition: 0.5s ease; 
+}
+
+/* productos */
+
+.productos h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.grid-productos {
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid #7f7e7e50;
+    padding: 1.5rem;
+    border-radius: 10px;
+    
+    text-align: center;
+}
+.productos-card:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: 0.5s ease;
+}
+
+/* Productos destacados BOOTSTRAP? */
+
+
+.destacados-card{
+    text-align: center;
+}
+.grid-destacados {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+}
+.destacados-card {
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid #7f7e7e50;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.destacados-card:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* footer */
+footer {
+    text-align: center;
+    padding: 1.2rem;
+    margin-top: 3rem;
+    color:#7f7e7e;
+
+}
+footer a {
+    text-decoration: none;
+    
+}
+
+/*  no quiero el color violeta del link ya visitado - pseudoclase aqui */
+footer a:visited {
+    color: #7f7e7e; 
+    background-color: transparent;
+}
+footer a:hover {
+    color:#e2b762;
+    transition: 0.3s ease;
+}
+
+/* responsive MENU HAMBURGUESA PARA PANTALLAS PEQUEÑAS*/ 
+ @media (max-width: 768px) {
+    .grid-productos,
+    .grid-destacados {
+        grid-template-columns: 1fr 1fr;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+ }
+
+ @media (max-width: 480px) {
+    .grid-productos,
+    .grid-destacados {
+        grid-template-columns: 1fr;
+    }
+ }
+
+ .titulo-coleccion {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.titulo-coleccion h1 {
+  font-size: 2.4rem;
+  color: #2f5c4c; /* Verde */
+  margin-bottom: 0.5rem;
+}
+
+.titulo-coleccion p {
+  color: #7f7e7e; /* Gris */
+  font-size: 1.1rem;
+}
+.logo img,
+.logo-img {
+  height: 50px; 
+  width: auto;
+  display: block;
+}
+
+/*  tamaños de las imagenes  */
+.carousel-item img {
+  height: 400px;       
+  object-fit: cover;   
+}
+.img-top {
+  object-position: center;
+}
+
+.img-center {
+  object-position: center;
+}
+.img-bottom {
+  object-position: 100% 60% ;
+}
+
+
+ 
+ 
+
+
+
